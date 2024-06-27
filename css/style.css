@@ -1,32 +1,60 @@
 * { 
     padding: 0;
     margin: 0;
+    /* background-color: var(--color9); */
+    color: var(--color1);
+
+}
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+h1 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700 bold;
+}
+h2 {
+    font-size: 24px;
+    line-height: 34;
+    font-weight: 600 bold;
 }
 :root {
-    --color1: #1f1f20;
-    --color2: #2b4c7e;
-    --color3: #567ebb;
-    --color4: #606d80;
-    --color5: #dce0e6;
-}
+    --color1: #010B0C; 
+    --color2: #00468C; /*azul escuro*/
+    --color3: #0466C8; /*azul medio*/
+    --color4: #2C89E7; /*azul claro*/
+    --color5: #1A1A1A; 
+    --color6: #313131;
+    --color7: #A1A1A1;
+    --color8: #F7F7F7;
+    --color9: rgba(0, 0, 0, 0.4);
+    --color10: #232828; /*bg formulario*/
 
-/* NAVBAR */
-.navbar-toggler {
-    color: #ffffff;
+
 }
+/* COLOR BG */
+.colorbg {
+    background-color: var(--color10);
+}
+/* NAVBAR */
 .navbar-toggler img {
     width: 30px;
-    color: var(--color2);
+    color: var(--color8);
 }
 .navbar div a {
-    color: var(--color1);
+    color: var(--color8);
+    font-size: 18px;
     font-weight: 600;
-    transition:  0.3s;
+    transition:  0.3s ease;
+    text-decoration: none;
 }
 .navbar div a:hover {
     color: var(--color3);
     font-weight: 800;
     font-size: 1.5em;
+    text-shadow: 1px 1px 1rem var(--color9);
 }
 
 /* NEWSLETTER */
@@ -105,13 +133,10 @@
     color: var(--color5);
     border: 3px solid var(--color5);
 }
-
-
 /* IMAGEM O TOQUE */
 .oToque img{
     width: 100%;
 }
-
 /* ICONE FLUTUANTE WHATSAPP */
 .whatsappLink {
     position: fixed;
@@ -127,4 +152,36 @@
     font-size: 36px;
     box-shadow: 1px 1px 2px #888;
     z-index: 1000;
+}
+/* FORMULARIO */
+.form-content {
+    position: relative;
+}
+.form-content input {
+    border-radius: 8px;
+    border: 2px solid var(--color8);
+}
+.form-content a {
+    position: absolute;
+    font-size: 10px;
+    bottom: -20px;
+    left: 20px;
+    visibility: hidden;
+}
+.button-submit {
+    background-color: var(--color4);
+    color: var(--color8);
+    width: 100%;
+    border-radius: 15px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-content.error input {
+    border-color: #ff3b25;
+}
+.form-content.error a {
+    color: #ff3b25;
+    text-decoration: none;
+    visibility: visible;
 }

@@ -16,14 +16,13 @@
         width: 100%;
       }
     </style>
-
-
+    
     <title>PAISAGE</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg px-5">
-        <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg px-5 py-0 colorbg">
+        <div class="container-fluid px-5">
             <a class="navbar-brand logo" href="/">
                 <img src="/img/logoPaisage.png" style="width: 80px;" alt="logo paisage">
             </a>
@@ -38,59 +37,71 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto text-center">
+                  <p>
                     <a class="nav-link" href="/index.html">inicio</a>
+                  </p>
+                  <p>
                     <a class="nav-link" href="/pages/sobrenos.html">Sobre nós</a>
+                  </p>
+                  <p>
                     <a class="nav-link" href="/pages/blog.html">Blog</a>
+                  </p>
+                  <p>  
                     <a class="nav-link" href="/pages/servicos.html">Serviços</a>
+                  </p>
+                  <p>  
                     <a class="nav-link" href="#contact-section">Contato</a>
+                  </p>  
+                  <p>
                     <a class="nav-link" href="/pages/orcamento.html">Orçamento</a>
+                  </p>  
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 my-5">
-                <div class="disclaimer px-3">
-                    <div class="disclaimerText">
-                        <legend>Vamos alcançar!</legend>
-                        <h1 class="mb-3">Como podemos ajudar no seu projeto?</h1>
-                        <p>Solicite um orçamento de nossos serviços digitais para sua empresa ou negócio. Descreva sua necessidade que nós entraremos em contato para entender e sugerir a melhor estratégia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 my-5">
-              <form class="row px-3 g-3">
-                <h1>Preencha o formulário!</h1>
-                  <div class="col-md-6">
-                    <label for="inputName" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Seu nome">
-                  </div>
-                  <div class="col-md-6">
-                      <label for="inputLastname" class="form-label">Sobrenome</label>
-                      <input type="text" class="form-control" id="inputLastname" placeholder="Seu sobrenome">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputEmail" class="form-label">E-mail</label>
-                      <input type="email" class="form-control" id="inputEmail" placeholder="exemplo@gmail.com">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="inputNumber" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" id="inputLastname" placeholder="(21) 9 9999-9999">
-                      </div>
-                    <div class="col-12">
-                      <label for="mensagem">Fale um pouco sobre o que deseja:</label>
-                      <textarea style="width: 100%;" maxlength="200" name="mensagem" id="mensagem" rows="4" cols="30" required></textarea>
-                    </div>
-                    <div class="col-12 ">
-                      <button type="submit" class="btn btn-primary buton-submit">Enviar</button>
-                    </div>
-                  </form>
-            </div>
+  </nav>
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-md-6 my-5">
+        <div class="disclaimer px-3">
+          <div class="disclaimerText">
+            <legend>Vamos alcançar!</legend>
+            <h1 class="mb-3">Como podemos ajudar no seu projeto?</h1>
+            <p>Solicite um orçamento de nossos serviços digitais para sua empresa ou negócio. Descreva sua necessidade que nós entraremos em contato para entender e sugerir a melhor estratégia.</p>
+          </div>
         </div>
+      </div>
+      <div class="col-md-6 my-5">
+        <form id="form" class="row px-3 g-3">
+          <h1>Preencha o formulário!</h1>
+          <div class="col-md-12 form-content">
+            <label for="username" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="username" placeholder="Seu nome completo">
+              <a href="#">aqui ficará a mensagem de erro..</a>
+            </div>
+            <div class="col-md-6 form-content">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="exemplo@gmail.com">
+              <a href="#">aqui ficará a mensagem de erro..</a>
+            </div>
+            <div class="col-md-6 form-content">
+              <label for="phone" class="form-label">Telefone</label>
+              <input type="text" class="form-control" id="phone" placeholder="(21) 9 9999-9999">
+              <a href="#">aqui ficará a mensagem de erro..</a>
+            </div>
+            <div class="col-12 form-content">
+              <label for="mensagem">Fale um pouco sobre o que deseja:</label>
+              <textarea style="width: 100%;" maxlength="200" name="mensagem" id="mensagem" rows="4"  cols="30" required>
+              </textarea>
+            </div>
+            <div class="col-12 form-content">
+              <button type="submit" class="btn button-submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="">
-        <div class="row">
+        <div class="row my-5">
             <div class="col-12 p-0">
                 <div class="oToque">
                     <img src="/img/oToque.jpg" alt="Toque entre mãos">
@@ -155,7 +166,7 @@
     </div>
   </div>
 </div> -->
-        <div class="alert alert-warning alert-dismissible fade show text-center " role="alert">
+        <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
             <strong>Ficou com dúvidas?!</strong> Entre em contato conosco (51) 99999-9999.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -164,14 +175,13 @@
         <a href="https://wa.me/5192520889" target="_blank">
             <img src="/img/whatsapp.png" class="whatsappLink" alt="Logo  WhatsApp">
         </a>
-        
     </div>
 
 
   
 
     <!-- JAVASCRIPT -->
-
+    <script src="../form.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
