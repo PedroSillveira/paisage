@@ -24,7 +24,7 @@ phone.addEventListener("blur", () =>{
 function checkInputUsername (){
     const usernameValue = username.value;
     console.log(usernameValue);
-    // condição
+    // condição 
     if (usernameValue == ""){
         errorInput (username, "Sessão obrigatória!")
     } else {

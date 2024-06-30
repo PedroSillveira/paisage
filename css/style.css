@@ -59,7 +59,7 @@ label {
 .textForm {
     color: #00468C;
     max-width: 300px;
-    
+
 }
 /* NAVBAR */
 .navbar-toggler img {
@@ -130,4 +130,16 @@ label {
     text-decoration: none;
     font-weight: 800;
     visibility: visible;
+}
+/* FOOTER */
+.contentFooter h3 {
+    color: var(--color3);
+    margin: 1.2rem;
+    font-weight: 700;
+}
+.contentFooter li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color7);
 }
